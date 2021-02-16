@@ -1,0 +1,83 @@
+body{
+    /*evita que aparezca un scroll x en la ventana, mientras se reproduce la animación*/
+    overflow: hidden;
+}
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+/*Haciendo que un texto se deslice por la ventana del navegador*/
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/*Añadiendo otro fotograma*/
+/*@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}*/
+
+/*Añadiendo otro fotograma 2*/
+/*@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        font-size: 150%;
+    }
+
+    25% {
+        font-size: 175%;
+    }
+
+    50% {
+        font-size: 200%;
+    }
+
+    75% {
+        font-size: 175%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+        font-size: 150%;
+    }
+}*/
+
+/*Haciendo que se repita*/
+/*p{
+    animation-iteration-count: infinite;
+}*/
+
+/*Haciendo que se mueva hacia adelante y hacia atras*/
+/*p {
+    animation-direction: alternate;
+}*/
+
+/*Usando la versión abreviada de animation*/
+/*p {
+    animation: 3s infinite alternate slidein;
+}*/
