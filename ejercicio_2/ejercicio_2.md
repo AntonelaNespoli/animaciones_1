@@ -61,7 +61,7 @@ Usaremos un poco de Javascript para escuchar los tres posibles eventos de animac
     e.addEventListener("animationiteration", listener, false);
     e.className = "slidein";
 
-Esta es la forma estándar de detectar eventos en Javascript, si quieren conocer más detalles sobre cómo funciona la detección de eventos, consulta la documentación de [element.addEventListener()](https://developer.mozilla.org/es/docs/Web/API/Element/addEventListener).
+Esta es la forma estándar de detectar eventos en Javascript, si quieren conocer más detalles sobre cómo funciona la detección de eventos, consulta la documentación de [element.addEventListener()](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener).
 
 La última línea pone la clase `slidein` al elemento para comenzar la animación. ¿Por qué?. Porque que el evento *animationstart* se dispara cuando comienza la animación y, en nuestro caso, esto sucedería antes de que nuestro código se hubiera ejecutado y no podríamos crear los detectores de eventos. Para evitarlo, creamos los detectores de eventos antes y añadimos la clase al elemento para iniciar la animación.
 
@@ -109,3 +109,4 @@ Solo nos falta mostrar el código HTML necesario para mostrar el ejemplo en la p
     <ul id="output">
     </ul>
 
+**Fuente: [Usando animaciones en CSS](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Animations/Usando_animaciones_CSS)**
